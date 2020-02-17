@@ -1,0 +1,10 @@
+for i in range(0,1000):
+            def function(y1):
+                sf1=((self.Q**2*self.n**2)/(((self.b*y1+self.m*y1**2)**(10/3))/((self.b+2*y1*(1+self.m**2)**0.5)**(4/3))))
+                sf2=((self.Q**2*self.n**2)/(((self.b*y2+self.m*y2**2)**(10/3))/((self.b+2*y2*(1+self.m**2)**0.5)**(4/3))))
+               
+                return y2+((self.Q**2)/(2*9.81*((self.b*y2+self.m*y2**2)**2)))+0.5*sf2*x-y1-self.S*x-(self.Q**2/(2*9.81*((self.b*y1+self.m*y1**2)**2)))+0.5*sf1*x
+            t=optimize.newton(function,0.7,tol=1.48e-08)
+            y_1.append(float(t))
+            y2=t
+        return y_1
